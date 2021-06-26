@@ -47,7 +47,7 @@ all(colnames(data) == rownames(meta))
 
 # create a directory for QC output
 if(!dir.exists("./results/qc/")){
-  dir.create("./results/qc/")
+  dir.create("./results/qc/", recursive = TRUE)
 }
 
 # RNA distribution
