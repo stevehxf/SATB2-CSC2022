@@ -143,8 +143,10 @@ sizeFactors(dds_ko) # check the size factors
 normalized_counts_ko <- counts(dds_ko, normalized=TRUE)
 
 # export normalized counts for downstream analysis
+if(!dir.exists("./results/normalization/")){
+  dir.create("./results/normalization/", recursive = TRUE)
+}
 write.table(normalized_counts_ko, file="results/normalization/normalized_counts_ko.txt", sep="\t", quote=F, col.names=NA)
-write.table(normalized_counts_ko, file="GSEA/gsea_input/normalized_counts_ko.txt", sep="\t", quote=F, col.names=NA)
 
 # export the meta data for downstream analysis
 write.csv(meta_satb2_ko, "meta/meta_ko.csv")
@@ -274,14 +276,3 @@ p1 <- pheatmap(vsd_mean_wide[,-7],
 )
 ### export
 ggsave(p1, filename = "figures/timecourse_heatmap.pdf")
-
-
-## GSEA plot ####
-#gsea_results <- read_csv("GSEA/gsea_input/GSEA_table.csv")
-#names(gsea_results)[1] <- "sample"
-#gsea_results$sample <- factor(gsea_results$sample, levels = c("D1vsD0","D2vsD0","D4vsD0","D6vsD0","D30vsD0"))
-#gsea_results %>% ggplot(aes(x=sample, y=as.numeric(ES), color=-log10(P))) +
-#  geom_point(size=5) +
-#  theme_bw() + 
-#  ylim(-0.5,0.5)
-#ggsave("GSEA/GSEA.ESplot.pdf")
