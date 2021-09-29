@@ -1,4 +1,6 @@
 ## Authour: Xiaofeng Steve Huang
+## Please cite: https://doi.org/10.1016/j.stem.2021.09.004
+## Paper: [SATB2 preserves colon stem cell identity and mediates ileum-colon conversion via enhancer remodeling]. Cell Stem Cell.
 ## Project: Satb2 knock out time course in vivo
 ## Date of update: June 26th 2021
 
