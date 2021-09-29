@@ -1,5 +1,5 @@
 # Please cite this paper
-
+SATB2 preserves colon stem cell identity and mediates ileum-colon conversion via enhancer remodeling
 https://doi.org/10.1016/j.stem.2021.09.004
 
 # RNAseq_time_course_analysis_Satb2
