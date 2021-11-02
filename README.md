@@ -10,6 +10,7 @@ Adult stem cells maintain regenerative tissue structure and function by producin
 SATB2, intestine regeneration, colonic mucosa, stem cell conversion, enhancer remodelingintestine
 
 # RNAseq_time_course_analysis
+## Figure 3. Rapid conversion of colonocytes to enterocytes after SATB2 loss
 Satb2 in vivo knockout at a series of different time points. RNA-seq data of the intestinal epithelium was analyzed.
 
 ## The procedure to reproduce the analysis
